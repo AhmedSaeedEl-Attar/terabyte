@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل دخول</title>
+    <link rel="shortcut icon" type="image" href="img/Layer 4.png">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div id="oppo">
+    <div class="nav">
+        <div class="container">
+            <div class="market"><a href="../index.html"><img src="logo.png" alt="logo"></a></div>
+            <div class="log"><a href="#" id="log">تسجيل الدخول</a></div>
+        </div>
+    </div>
+    
+    <section class="sec">
+        <div class="container">
+        <div class="label">
+            <h2>تسجيل البيانات</h2>
+        </div>
+        <div class="login">
+            <form>
+               <div class="col">
+                <label for="d">اسم العميل</label>
+                <input id="d" type="text" required placeholder=" كتابة اسم العميل كاملا"> 
+               </div>
+                <div class="col">
+                    <label for="p">رقم الهاتف</label>
+                <input id="p" type="text" required placeholder="رقم هاتف العميل"> 
+                </div>
+               <div class="col">
+                <label for="o">العنوان</label>
+                <textarea id="o" placeholder= "عنوان العميل" required></textarea>
+               </div>
+               <div class="col">
+                <label for="g">ملاحظات العميل</label>
+                <textarea  id="g" placeholder="ملاحظات العميل" required></textarea>
+               </div>
+             <div class="col">
+                <label for="g">ملاحظات المندوب</label>
+                <textarea  id="g" placeholder="اكتب ملاحظاتك" required></textarea>
+             </div>
+               <div class="btn">
+                <button type="submit" class="gre">التسجيل</button>
+                <button type="reset" class="del">ازاله القيم</button>
+               </div>
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <div class="footer">
+        <div class="fs">  جميع الحقوق محفوظة لشركة تيرا بايت 2021 &copy;</div>
+        <div class="num">01011015525</div>
+    </div>
+
+</div>
+
+    <div class="log-hide" id="hide">
+        <form>
+            <label>تسجيل دخول المندوب</label>
+            <input type="text" placeholder="اسم المندوب">
+            <input type="password" placeholder="كلمة المرور">
+            <button type="submit">تسجيل الدخول</button>
+            <p id="back">Back</p>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

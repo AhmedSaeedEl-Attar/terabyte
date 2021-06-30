@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 94px;
+    margin-top: 12px;
+}
+html {
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #16a3de;
+    background-attachment: fixed;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul{
+    list-style-type: none;
+}
+
+/* container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+width: 750px;
+}
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+.nav{
+    background-color: #000000b0;
+}
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    line-height: 70px;
+}
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px ;
+    margin-top: 50px;
+    background-color: #00000007;
+}
+section .container .label {
+    text-align: center;
+    padding: 17px;
+}
+section .container .label h2 {
+    color: #fff;
+    box-shadow: 0 0 15px black;
+}
+section .login {
+    padding: 0 31px;
+}
+input ,textarea {
+    width: 80%;
+    height: 45px;
+    padding: 16px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #000;
+    border: 0;
+    font-size: 21px;
+    word-spacing: -1px;
+}
+input ,textarea:focus{
+    border: 0;
+    outline: 0;
+}
+section .login form {
+    margin-top: 30px;
+    text-align: center;
+}
+section .login form .col{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+section .login form .col label{
+ color: #fff;
+ width: 20%;
+ 
+}
+
+section .login form .col textarea{
+    height: 70px;
+}
+button{
+    width: 91px;
+    height: 40px;
+    border-radius: 7px;
+    margin-left: 5px;
+    font-size: larger;
+    border: 0;
+    cursor: pointer;
+}
+.btn{
+    padding: 40px;
+    margin: 20px 0;
+}
+.btn .gre{
+    background-color: #1cd633;
+    color: #fff;
+}
+.btn .del{
+    background-color: #dc1010;
+    color: white;
+}
+@media (max-width:767px) {
+    
+    .sec{
+        width: 100%;
+        margin-top: 120px;
+    }
+    section .login form .col{
+        display: flex;
+        flex-direction: column;
+    }
+    section .login form .col label {
+        color: #fff;
+        width: 74%;
+        text-align: initial;
+        margin-bottom: 13px;
+    }
+    input, textarea {
+        width: 100%;
+        height: 50px;
+    }
+   
+}
+
+.footer{
+    text-align: center;
+    width: 100%;
+    transform: translate(0px, 655px);
+    background-color: #fff;
+}
+@media (max-width: 767px) {
+.footer {
+    transform: translate(0px, 893px);
+}
+}
+.log-hide{
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    padding: 26px;
+    width: 522px;
+    height: 283px;
+    z-index: 5;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    visibility: hidden;
+    box-shadow: 0 0 9px black;
+}
+.log-hide form label{
+    font-size: 21px;
+}
+.log-hide form input {
+    margin-top: 20px;
+    height: 45px;
+    background-color:  #0d0d0d24;
+}
+.log-hide form button{
+    width: 150px;
+    display: block;
+    margin: 15px auto;
+    background-color: #16a3de;
+    color: #fff;
+    border: 0;
+}
+.log-hide form p {
+    margin-top: -24px;
+    margin-left: 350px;
+    cursor: pointer;
+    color: red;
+}
+.show{
+    visibility: visible;
+}
+.hideen{
+    visibility: hidden;
+}
+.op{
+    opacity: .5;
+}
+@media (max-width:767px){
+    .log-hide{
+        width: 350px;
+    }
+}
+
